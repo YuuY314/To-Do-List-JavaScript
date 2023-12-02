@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1950/1950715.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <h1>To Do List <i class="fa-solid fa-check"></i></h1>
+    </header>
+    <main>
+        <section id="toolbar">
+            <div>
+                <input type="text" id="filter" placeholder="Buscar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <button id="toggle-task-form">Adicionar tarefa <i class="fa-solid fa-plus"></i></button>
+        </section>
+        <section id="tasks">
+            
+        </section>
+        <section id="add-task-form" class="hide">
+            <div id="form">
+                <h1>Adicione sua tarefa</h1>
+                <div>
+                    <div>
+                        <label for="name-task"><strong>Nome da tarefa</strong></label>
+                        <input type="text" id="name-task" placeholder="Digite a sua tarefa">
+                    </div>
+                    <div>
+                        <label for="description-task"><strong>Descrição da tarefa</strong></label>
+                        <textarea id="description-task" cols="30" rows="10" placeholder="Descreva sua tarefa"></textarea>
+                    </div>
+                </div>
+                <button id="add-task">Adicionar</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

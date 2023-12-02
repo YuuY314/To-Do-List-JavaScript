@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #232323;
+    font-family: "Open Sans";
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #eee;
+}
+
+header {
+    height: 10%;
+    width: 100%;
+    padding: 20px;
+    outline: 2px solid #eee;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    height: 90%;
+    width: 100%;
+}
+
+main #toolbar {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+}
+
+main #toolbar div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+main #toolbar input {
+    border: 0;
+    outline: 0;
+    padding: .8em;
+    border-radius: 5px;
+}
+
+main #toolbar i {
+    font-size: 1.5em;
+}
+
+main #toolbar #toggle-task-form {
+    border: 0;
+    outline: 0;
+    padding: .8em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+main #toolbar #toggle-task-form:hover {
+    background-color: #aaa;
+}
+
+main #tasks {
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+main #tasks .task {
+    background-color: #eee;
+    color: #232323;
+    width: 49%;
+    height: 40%;
+    padding: 2em;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30%;
+}
+
+main #tasks .title {
+    width: 100%;
+}
+
+main #tasks .buttons {
+    display: flex;
+    gap: 1em;
+}
+
+main #tasks .buttons button {
+    border: 0;
+    outline: 0;
+    font-size: 2em;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+main #add-task-form {
+    height: 90%;
+    width: 100%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #form {
+    background-color: #eee;
+    width: 40%;
+    height: 90%;
+    border: 10px solid black;
+    border-radius: 10px;
+    color: #232323;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main #form div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main #form input, main #form textarea {
+    border: 3px solid black;
+    outline: 0;
+    padding: 0.8em;
+    border-radius: 5px;
+}
+
+main #form button {
+    border: 3px solid black;
+    outline: 0;
+    padding: .8em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+    margin-top: 10px;
+}
+
+main #form button:hover {
+    background-color: #aaa;
+}
+
+.hide {
+    display: none !important;
+}
+
+.checked {
+    background-color: #aaa !important;
+}
+
+i {
+    pointer-events: none;
+}
