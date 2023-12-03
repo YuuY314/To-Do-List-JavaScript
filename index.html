@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List</title>
+    <title>To Do List ✓</title>
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1950/1950715.png">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/scripts.js" defer></script>
@@ -19,19 +19,18 @@
     <main>
         <section id="toolbar">
             <div>
-                <input type="text" id="filter" placeholder="Buscar">
+                <input type="text" id="search" placeholder="Buscar">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
             <button id="toggle-task-form">Adicionar tarefa <i class="fa-solid fa-plus"></i></button>
         </section>
         <section id="tasks">
-            
         </section>
         <section id="add-task-form" class="hide">
             <div id="form">
                 <h1>Adicione sua tarefa</h1>
                 <div>
-                    <div>
+                    <div> 
                         <label for="name-task"><strong>Nome da tarefa</strong></label>
                         <input type="text" id="name-task" placeholder="Digite a sua tarefa">
                     </div>
@@ -40,7 +39,10 @@
                         <textarea id="description-task" cols="30" rows="10" placeholder="Descreva sua tarefa"></textarea>
                     </div>
                 </div>
-                <button id="add-task">Adicionar</button>
+                <div id="buttons">
+                    <button id="cancel-task">Cancelar</button>
+                    <button id="add-task">Adicionar</button>
+                </div>
             </div>
         </section>
     </main>

@@ -93,6 +93,7 @@ main #tasks .task {
     align-items: center;
     justify-content: center;
     gap: 30%;
+    position: relative;
 }
 
 main #tasks .title {
@@ -146,6 +147,14 @@ main #form input, main #form textarea {
     border-radius: 5px;
 }
 
+main #form #buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+}
+
 main #form button {
     border: 3px solid black;
     outline: 0;
@@ -171,4 +180,14 @@ main #form button:hover {
 
 i {
     pointer-events: none;
+}
+
+.status {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    background-color: #232323;
+    color: #eee;
+    padding: 0.6em;
+    border-radius: 40px;
 }
